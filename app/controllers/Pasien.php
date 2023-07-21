@@ -25,7 +25,11 @@ class Pasien extends Controller
     public function tambah()
     {
         if ($this->model('Pasien_model')->tambahDataPasien($_POST) > 0) {
-            // Flasher::setFlash('berhasil', 'ditambahkan', 'success');
+            Flasher::setFlash('berhasil', 'ditambahkan', 'success');
+            header('Location: ' . BASEURL . '/pasien');
+            exit;
+        } else {
+            Flasher::setFlash('gagal', 'ditambahkan', 'danger');
             header('Location: ' . BASEURL . '/pasien');
             exit;
         }

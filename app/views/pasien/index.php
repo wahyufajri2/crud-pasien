@@ -1,4 +1,11 @@
 <div class="container mt-3">
+
+    <div class="row">
+        <div class="col">
+            <?php Flasher::flash(); ?>
+        </div>
+    </div>
+
     <div class="row">
         <div class="col">
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#formModal">
