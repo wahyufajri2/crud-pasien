@@ -38,4 +38,15 @@ class Pasien_model
 
         return $this->db->rowCount();
     }
+
+    public function hapusDataPasien($id_pasien)
+    {
+        $query = "DELETE FROM pasien WHERE id_pasien = :id_pasien";
+        $this->db->query($query);
+        $this->db->bind('id_pasien', $id_pasien);
+
+        $this->db->execute();
+
+        return $this->db->rowCount();
+    }
 }
