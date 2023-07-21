@@ -34,4 +34,17 @@ class Pasien extends Controller
             exit;
         }
     }
+
+    public function hapus($id_pasien)
+    {
+        if ($this->model('Pasien_model')->hapusDataPasien($id_pasien) > 0) {
+            Flasher::setFlash('berhasil', 'dihapus', 'success');
+            header('Location: ' . BASEURL . '/pasien');
+            exit;
+        } else {
+            Flasher::setFlash('gagal', 'dihapus', 'danger');
+            header('Location: ' . BASEURL . '/pasien');
+            exit;
+        }
+    }
 }
