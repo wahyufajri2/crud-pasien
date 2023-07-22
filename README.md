@@ -17,7 +17,7 @@ Website CRUD Pasien adalah sebuah aplikasi sederhana untuk melakukan operasi CRU
 2. Clone repositori ini ke dalam direktori root server lokal Anda.
 
 ```bash
-git clone https://github.com/nama_pengguna/crud-pasien.git
+git clone https://github.com/wahyufajri2/crud-pasien.git
 ```
 
 3. Buat database baru dengan nama `jwdpnc` di MySQL.
