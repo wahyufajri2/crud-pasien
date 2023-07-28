@@ -49,4 +49,23 @@ class Pasien_model
 
         return $this->db->rowCount();
     }
+
+    public function editDataPasien($data)
+    {
+        $query = "UPDATE pasien SET
+                    nama = :nama,
+                    umur = :umur,
+                    alamat = :alamat
+                  WHERE id_pasien = :id_pasien";
+
+        $this->db->query($query);
+        $this->db->bind('nama', $data['nama']);
+        $this->db->bind('umur', $data['umur']);
+        $this->db->bind('alamat', $data['alamat']);
+        $this->db->bind('id_pasien', $data['id_pasien']);
+
+        $this->db->execute();
+
+        return $this->db->rowCount();
+    }
 }

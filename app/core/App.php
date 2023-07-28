@@ -2,7 +2,7 @@
 
 class App
 {
-    protected $controller = 'home';
+    protected $controller = 'auth';
     protected $method = 'index';
     protected $params = [];
 
@@ -47,7 +47,7 @@ class App
 
             return $url;
         } else {
-            $url = 'home';
+            $url = 'auth';
             return $url;
         }
     }

@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Halaman <?= $data['judul']; ?></title>
 
-    <link rel="icon" href="<?= BASEURL; ?>/img/icon.jpg">
-    <link rel="stylesheet" href="<?= BASEURL; ?>/css/bootstrap.css">
+    <link rel="shortcut icon" href="<?= BASEURL; ?>/img/icon.jpg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="<?= BASEURL; ?>/css/styleLog.css">
+    <link rel="stylesheet" href="<?= BASEURL; ?>/css/style.css">
 </head>
 
 <body>
