@@ -47,4 +47,23 @@ class Pasien extends Controller
             exit;
         }
     }
+
+    public function edit()
+    {
+        echo json_encode($this->model('Pasien_model')->getPasienById($_POST['id_pasien']));
+    }
+
+    public function getEdit()
+    {
+        if ($this->model('Pasien_model')->editDataPasien($_POST) > 0) {
+            Flasher::setFlash('berhasil', 'diedit', 'success');
+            header('Location: ' . BASEURL . '/pasien');
+            exit;
+        } else {
+            Flasher::setFlash('gagal', 'diedit', 'danger');
+            header('Location: ' . BASEURL . '/pasien');
+            exit;
+        }
+    }
+
 }

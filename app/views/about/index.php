@@ -1,8 +1,52 @@
-<div class="container">
-    <div class="jumbotron">
-        <div class="container">
-            <h1 class="mt-3">Tentang ku</h1>
-            <p>Halo, nama saya <?= $data['nama']; ?>, umur saya <?= $data['umur']; ?> tahun, saya seorang <?= $data['pekerjaan']; ?>.</p>
+      <section class="portfolio" id="portfolio">
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="<?= BASEURL; ?>/img/rumah-sakit.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Development</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="<?= BASEURL; ?>/img/rumah-sakit.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Development</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="<?= BASEURL; ?>/img/rumah-sakit.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Development</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="<?= BASEURL; ?>/img/rumah-sakit.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Development</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="<?= BASEURL; ?>/img/rumah-sakit.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Development</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="<?= BASEURL; ?>/img/rumah-sakit.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Development</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
+    </section>

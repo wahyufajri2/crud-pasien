@@ -8,7 +8,7 @@
 
     <div class="row">
         <div class="col">
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#formModal">
+            <button type="button" class="btn btn-primary tombolTambahData" data-toggle="modal" data-target="#formModal">
                 Tambah Pasien
             </button>
             <h3 class="mt-4">Daftar Pasien</h3>
@@ -34,7 +34,7 @@
                             <td><?= $psn['alamat']; ?></td>
                             <td>
                                 <a href="<?= BASEURL; ?>/pasien/detail/<?= $psn['id_pasien']; ?>" class="badge badge-primary">detail</a>
-                                <a href="<?= BASEURL; ?>/pasien/edit/<?= $psn['id_pasien']; ?>" class="badge badge-success">edit</a>
+                                <a href="<?= BASEURL; ?>/pasien/edit/<?= $psn['id_pasien']; ?>" class="badge badge-success tampilModalEdit" data-toggle="modal" data-target="#formModal" data-id_pasien="<?= $psn['id_pasien']; ?>">edit</a>
                                 <a href="<?= BASEURL; ?>/pasien/hapus/<?= $psn['id_pasien']; ?>" class="badge badge-danger" onclick="return confirm('yakin?');">hapus</a>
                             </td>
                         </tr>
@@ -47,17 +47,18 @@
 </div>
 
 <!-- Modal -->
-<div class="modal fade" id="formModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="judulModal" aria-hidden="true">
+<div class="modal fade" id="formModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="judulModal">Tambah Data Pasien</h5>
+                <h5 class="modal-title" id="formModalLabel">Tambah Data Pasien</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
                 <form action="<?= BASEURL; ?>/pasien/tambah" method="post">
+                    <input type="hidden" name="id_pasien" id="id_pasien">
                     <div class="form-group">
                         <label for="nama">Nama</label>
                         <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama Pasien..">
