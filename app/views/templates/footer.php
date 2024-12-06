@@ -21,12 +21,12 @@
         $('.tampilModalEdit').on('click', function() {
             $('#formModalLabel').html('Edit Data Pasien');
             $('.modal-footer button[type=submit]').html('Edit Data');
-            $('.modal-body form').attr('action', 'http://localhost/jwdpnc/public/pasien/getEdit');
+            $('.modal-body form').attr('action', 'http://localhost/crud-pasien/public/pasien/getEdit');
 
             const id_pasien = $(this).data('id_pasien');
 
             $.ajax({
-                url: 'http://localhost/jwdpnc/public/pasien/edit',
+                url: 'http://localhost/crud-pasien/public/pasien/edit',
                 data: {
                     id_pasien: id_pasien
                 },
